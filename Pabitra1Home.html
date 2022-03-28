@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Pabitra1Home.css">
+    
+
+</head>
+<body>
+
+    
+    <!-- FIRST Pabitra start this ------------------------------------------------------------------>
+
+    <header>
+
+        <a href="#" class="logo"><i class='fas fa-pizza-slice'></i>food.</a>
+
+        <nav class="navbar" >
+            <a  class="active" href="#home">home</a>
+            <a href="Dishes.html">dishes</a>
+            <a href="Gallery.html">gallery</a>
+            <a href="Menu.html">menu</a>
+            <a href="Review.html">review</a>
+            <a href="About.html">about</a>
+        </nav>
+
+         <!-- <i class="fa fa-bars class" class="menu-icon" onclick="togglemenu()"></i> -->
+         
+
+        <div class="icons">
+            <i class="fa fa-bars" id="menu-bars"></i>
+            <i class="fa fa-search" id="search-icons"></i>
+            <a href="#" class="fa fa-heart"></a>
+            
+            <a href="#" class="fa fa-shopping-cart"></a>
+        </div>
+    </header>
+
+    <form action="post" id="search-form">
+        <input type="search" placeholder="search......" name="" id="search-box">
+        <label for="search-box" class="fa fa-search"></label>
+        <i class="fa fa-times" id="close"></i>
+    </form>
+
+    
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <!-- Chicken-roll -->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>fresh and delicious</span>
+                        <h3>veg & nonveg</h3>
+                        <p>your weekend & daily need foods</p>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                    <div class="image">
+                        <img src="fried-chicken.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        </section>
+
+        <!--Banner section..................---------------------------------------------------------------  -->
+        <section class="banner-container">
+        <div class="banner">
+            <img src="idli.jpg" alt="">
+            <div class="content">
+                <h3>special offer</h3>
+                <p>upto 10% offer</p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="mix combination.jpg" alt="">
+            <div class="content">
+                <h3>limted offer</h3>
+                <p>upto 20% offer</p>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- Our dishes....... ---------------------------------------------------------------------->
+   
+    <section class="title" id="title">
+        <h1 class="heading">our special <span>dishes</span></h1>
+    </section>
+
+    <section class="category" id="category">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>chicken-roll</h3>
+                <p>upto 10% offer</p>
+                <img src="chicken-roll.jpg" alt="">
+                <a href="javascript:void(0)" onClick="openpopup('chicken-roll')" class="button1">buy now</a>
+            </div>
+
+            <div class="box">
+                <h3>food-pizza</h3>
+                <p>upto 10% offer</p>
+                <img src="Food-Pizza.jpg" alt="">
+                <a href="javascript:void(1)" onClick="openpopup('food-pizza')" class="button1">buy now</a>
+            </div>
+
+            <div class="box">
+                <h3>chowmin</h3>
+                <p>upto 10% offer</p>
+                <img src="chowmin.jpg" alt="">
+                <a href="javascript:void(2)" onClick="openpopup('chowmin')" class="button1">buy now</a>
+            </div>
+
+            <div class="box">
+                <h3>idli-dosa</h3>
+                <p>upto 10% offer</p>
+                <img src="india-veggie.jpg" alt="">
+                <a href="javascript:void(3)" onClick="openpopup('idli-dosa')" class="button1">buy now</a>
+            </div>
+        </div>
+<!-- Pop up from open............ -->
+        <div id="popupfrm">
+            <div id="popuptitle">
+                <table width="100%" cellspacing="0">
+                <tr>
+                <td width="90%" style="color:rgb(255, 255, 255);"><b>Order now</b></td>
+                <td width="20%"><button onClick="closepoup()"><big>&times;</big></button></td>
+                </tr>
+                </table>
+            </div>
+            
+            <form action="#" method="post">
+                <label>Food Name</label><br>
+                <input type="text" name="typefood" id="foodtype" style="width:100%" readonly>
+                <label>Name</label><br>
+                <input type="text" name="name" style="width:100%">
+                <label>Mobile</label><br>
+                <input type="number" name="mobile" style="width:100%">
+                <label>Date</label><br>
+                <input type="date" name="date" style="width:100%">
+                <label>Email</label><br>
+                <input type="text" name="email" style="width:100%">
+                <label>Time</label><br>
+                <input type="text" name="time" style="width:100%">
+                <label>Locality</label><br>
+                <input type="text" name="Locality" style="width:100%">
+                <input type="submit" name="submit" value="Send" class="button1" style="width:100%">
+            </form>
+        </div>
+
+    </section>
+
+    <!-- about section -------------------------------------------------------------->
+    <section class="title" id="title">
+        <h1 class="heading1">About Us <span>why choose us?</span></h1>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="image">
+                <img src="non-veg-thali-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>best food in the area</h3>
+                <p>fgdfgfg fgfdgfd jkhfikuhigfhfgh hfjkdshfjkhsfkjdshjkfhdjfhfhdjfhdkjfhjf fhsjkdfhdsjfhdjsfh sdhfjhdfjdshfdj
+                   gsgdhjsgd yhuiueyriue euriouefhdsbvjksdfh hfuieyfihjfd jnfjhfjehfsdjkfhsdkj jhfjdshfksdjhfskd jhfjd
+                   vcdvfghdfhsdfvhdsv eiuriyeytrio yruieyruieyr yhrfuiyeiiwdsopiwbvdbvcm</p>
+                
+                <div class="icon-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>free delivery</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa fa-dollar"></i>
+                        <span>easy payments</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa fa-headphones"></i>
+                        <span>24/7 services</span>
+                    </div>
+
+                    <div class="icons2">
+                        <a href="About.html" class="button1">learn more</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu section............. --------------------------------------------------->
+
+    <section class="title" id="title">
+        <h1 class="heading2">Our Menu <span>today's special</span></h1>
+    </section>
+    <section class="product" id="product">
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">10%</span>
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+                <img src="Burger.jpg" alt="">
+                <h3>Burger</h3>
+
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div> 
+                
+                <div class="price">$10 <span>$15.0</span></div>
+                <a href="#" class="button2">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">10%</span>
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+                <img src="Mutton-Biryani.jpg" alt="">
+                <h3>Biryani</h3>
+
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div> 
+                
+                <div class="price">$10 <span>$15.0</span></div>
+                <a href="#" class="button2">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">10%</span>
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+                <img src="spring-roll.jpg" alt="">
+                <h3>spring-roll</h3>
+
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div> 
+                
+                <div class="price">$10 <span>$15.0</span></div>
+                <a href="#" class="button2">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">10%</span>
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+                <img src="chips.jpg" alt="">
+                <h3>Chips</h3>
+
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div> 
+                
+                <div class="price">$10 <span>$15.0</span></div>
+                <a href="#" class="button2">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">10%</span>
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+                <img src="kfc-Chicken.jpeg" alt="">
+                <h3>kfc-Chicken</h3>
+
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div> 
+                
+                <div class="price">$10 <span>$15.0</span></div>
+                <a href="#" class="button2">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">10%</span>
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+                <img src="veg_pakora.jpg" alt="">
+                <h3>veg-pakora</h3>
+
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div> 
+                
+                <div class="price">$10 <span>$15.0</span></div>
+                <a href="#" class="button2">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">10%</span>
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+                <img src="cutlet.jpg" alt="">
+                <h3>cutlet</h3>
+
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div> 
+                
+                <div class="price">$10 <span>$15.0</span></div>
+                <a href="#" class="button2">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">10%</span>
+                <div class="icons">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-eye"></a>
+                    <a href="#" class="fa fa-share"></a>
+                </div>
+                <img src="veg-fried rice.jpg" alt="">
+                <h3>fried-rice</h3>
+
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div> 
+                
+                <div class="price">$10 <span>$15.0</span></div>
+                <a href="#" class="button2">add to cart</a>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- OUR Customer rivew.............--------------------------------------- -->
+    <section class="title" id="title">
+        <h1 class="heading3">Our Customer's  <span>review</span></h1>
+    </section>
+
+    <section class="review" id="review">
+        <div class="box-container">
+
+            <div class="box">
+                
+                <img src="k (1).jpg" alt="">
+                <h3>Pabitra mondal</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>awsome food mind blowing.. 
+                   good food delicious food .mind blowing..I love this &#128525 &#128151 &#128151 
+                </p>
+            </div>
+
+            <div class="box">
+                
+                <img src="k (1).jpg" alt="">
+                <h3>Pabitra mondal</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>awsome food mind blowing.. 
+                   good food delicious food .mind blowing..I love this &#128525 &#128151 &#128151 
+                </p>
+            </div>
+
+            <div class="box">
+                
+                <img src="k (1).jpg" alt="">
+                <h3>Pabitra mondal</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>awsome food mind blowing.. 
+                   good food delicious food .mind blowing..I love this &#128525 &#128151 &#128151 
+                </p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- Order now section................................................ -->
+
+    <section class="title" id="title">
+        <h1 class="heading2">order <span>now</span></h1>
+    </section>
+
+    <section class="order" id="order">
+        
+        <div class="row">
+            <div class="image">
+                <img src="chicken-roll.jpg" alt="">
+            </div>
+
+            <form action="">
+
+            <div class="inputbox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputbox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="food name">
+            </div>
+
+            <div class="inputbox">
+                <input type="date" placeholder="date">
+                <input type="time" placeholder="time">
+            </div>
+
+            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="order now" class="btn">
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer section................................................................................ -->
+
+    <div class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Contact info</h3>
+                <p><i class="fa fa-map-marker"></i>Mumbai, india 40005</p>
+                <p><i class="fa fa-envelope"></i>pabitra@gamil.com</p>
+                <p><i class="fa fa-phone"></i>+123-896-457</p>
+                <p><i class="fa fa-youtube"></i>pabitra vlogs</p>
+            </div>
+
+            <div class="box">
+                <h3>branch location</h3>
+                <a href="#">india</a>
+                <a href="#">usa</a>
+                <a href="#">french</a>
+                <a href="#">england</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">popular</a>
+                <a href="#">gallery</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#" class="fa fa-instagram">  instagram</a>
+                <a href="#" class="fa fa-facebook">  facebook</a>
+                <a href="#" class="fa fa-twitter">  twitter</a>
+                <a href="#" class="fa fa-linkedin">  linkedin</a>
+            </div>
+
+        </div>
+        <h1 class="credit">created by<a href="#">Final project of my friends</a> all rights reserved. </h1>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+            
+    <script src="Pabitra1Home.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+
+    <!-- ........................Pabitra ends this................. -->
+</body>
+</html>
+
